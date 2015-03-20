@@ -838,7 +838,6 @@ static const int64 nTargetSpacing = 120; // UnitCoin: 2 minute blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
-// https://bitcointalk.org/index.php?topic=182430.msg1904506#msg1904506
 static const int64 nReTargetHistoryFact = 4; // look at 4 times the retarget
                                              // interval into the block history
 
@@ -2002,7 +2001,7 @@ bool LoadBlockIndex(bool fAllowNew)
     
         
         // Genesis block
-        const char* pszTimestamp = "Traditionally one puts something timely here coinciding with the epoch";
+        const char* pszTimestamp = "The UnitCoin was created on 16 March 2015";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2014,15 +2013,11 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1300000000; //epochtime
+        block.nTime    = 1426464000; //epochtime
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 0;
 
-        if (fTestNet)
-        {
-            block.nTime    = 1300000000;
-            block.nNonce   = 0;
-        }
+        if (fTestNet) block.nTime    = 1426464000;
 
         //// debug print
         printf("%s\n", block.GetHash().ToString().c_str());
@@ -2031,7 +2026,7 @@ bool LoadBlockIndex(bool fAllowNew)
         assert(block.hashMerkleRoot == uint256("0x"));
 
         // If genesis block hash does not match, then generate new genesis hash.
-        if (true && block.GetHash() != hashGenesisBlock)
+        if (block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
