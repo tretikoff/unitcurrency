@@ -25,143 +25,143 @@ ResetArgs(const std::string& strArg)
 
 BOOST_AUTO_TEST_CASE(boolarg)
 {
-    ResetArgs("-foo");
-    BOOST_CHECK(GetBoolArg("-foo"));
-    BOOST_CHECK(GetBoolArg("-foo", false));
-    BOOST_CHECK(GetBoolArg("-foo", true));
+    ResetArgs("-unit");
+    BOOST_CHECK(GetBoolArg("-unit"));
+    BOOST_CHECK(GetBoolArg("-unit", false));
+    BOOST_CHECK(GetBoolArg("-unit", true));
 
     BOOST_CHECK(!GetBoolArg("-fo"));
     BOOST_CHECK(!GetBoolArg("-fo", false));
     BOOST_CHECK(GetBoolArg("-fo", true));
 
-    BOOST_CHECK(!GetBoolArg("-fooo"));
-    BOOST_CHECK(!GetBoolArg("-fooo", false));
-    BOOST_CHECK(GetBoolArg("-fooo", true));
+    BOOST_CHECK(!GetBoolArg("-unito"));
+    BOOST_CHECK(!GetBoolArg("-unito", false));
+    BOOST_CHECK(GetBoolArg("-unito", true));
 
-    ResetArgs("-foo=0");
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
+    ResetArgs("-unit=0");
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
 
-    ResetArgs("-foo=1");
-    BOOST_CHECK(GetBoolArg("-foo"));
-    BOOST_CHECK(GetBoolArg("-foo", false));
-    BOOST_CHECK(GetBoolArg("-foo", true));
+    ResetArgs("-unit=1");
+    BOOST_CHECK(GetBoolArg("-unit"));
+    BOOST_CHECK(GetBoolArg("-unit", false));
+    BOOST_CHECK(GetBoolArg("-unit", true));
 
     // New 0.6 feature: auto-map -nosomething to !-something:
-    ResetArgs("-nofoo");
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
+    ResetArgs("-nounit");
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
 
-    ResetArgs("-nofoo=1");
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
+    ResetArgs("-nounit=1");
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
 
-    ResetArgs("-foo -nofoo");  // -foo should win
-    BOOST_CHECK(GetBoolArg("-foo"));
-    BOOST_CHECK(GetBoolArg("-foo", false));
-    BOOST_CHECK(GetBoolArg("-foo", true));
+    ResetArgs("-unit -nounit");  // -unit should win
+    BOOST_CHECK(GetBoolArg("-unit"));
+    BOOST_CHECK(GetBoolArg("-unit", false));
+    BOOST_CHECK(GetBoolArg("-unit", true));
 
-    ResetArgs("-foo=1 -nofoo=1");  // -foo should win
-    BOOST_CHECK(GetBoolArg("-foo"));
-    BOOST_CHECK(GetBoolArg("-foo", false));
-    BOOST_CHECK(GetBoolArg("-foo", true));
+    ResetArgs("-unit=1 -nounit=1");  // -unit should win
+    BOOST_CHECK(GetBoolArg("-unit"));
+    BOOST_CHECK(GetBoolArg("-unit", false));
+    BOOST_CHECK(GetBoolArg("-unit", true));
 
-    ResetArgs("-foo=0 -nofoo=0");  // -foo should win
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
+    ResetArgs("-unit=0 -nounit=0");  // -unit should win
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
 
     // New 0.6 feature: treat -- same as -:
-    ResetArgs("--foo=1");
-    BOOST_CHECK(GetBoolArg("-foo"));
-    BOOST_CHECK(GetBoolArg("-foo", false));
-    BOOST_CHECK(GetBoolArg("-foo", true));
+    ResetArgs("--unit=1");
+    BOOST_CHECK(GetBoolArg("-unit"));
+    BOOST_CHECK(GetBoolArg("-unit", false));
+    BOOST_CHECK(GetBoolArg("-unit", true));
 
-    ResetArgs("--nofoo=1");
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
+    ResetArgs("--nounit=1");
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
 
 }
 
 BOOST_AUTO_TEST_CASE(stringarg)
 {
     ResetArgs("");
-    BOOST_CHECK_EQUAL(GetArg("-foo", ""), "");
-    BOOST_CHECK_EQUAL(GetArg("-foo", "eleven"), "eleven");
+    BOOST_CHECK_EQUAL(GetArg("-unit", ""), "");
+    BOOST_CHECK_EQUAL(GetArg("-unit", "eleven"), "eleven");
 
-    ResetArgs("-foo -bar");
-    BOOST_CHECK_EQUAL(GetArg("-foo", ""), "");
-    BOOST_CHECK_EQUAL(GetArg("-foo", "eleven"), "");
+    ResetArgs("-unit -bar");
+    BOOST_CHECK_EQUAL(GetArg("-unit", ""), "");
+    BOOST_CHECK_EQUAL(GetArg("-unit", "eleven"), "");
 
-    ResetArgs("-foo=");
-    BOOST_CHECK_EQUAL(GetArg("-foo", ""), "");
-    BOOST_CHECK_EQUAL(GetArg("-foo", "eleven"), "");
+    ResetArgs("-unit=");
+    BOOST_CHECK_EQUAL(GetArg("-unit", ""), "");
+    BOOST_CHECK_EQUAL(GetArg("-unit", "eleven"), "");
 
-    ResetArgs("-foo=11");
-    BOOST_CHECK_EQUAL(GetArg("-foo", ""), "11");
-    BOOST_CHECK_EQUAL(GetArg("-foo", "eleven"), "11");
+    ResetArgs("-unit=11");
+    BOOST_CHECK_EQUAL(GetArg("-unit", ""), "11");
+    BOOST_CHECK_EQUAL(GetArg("-unit", "eleven"), "11");
 
-    ResetArgs("-foo=eleven");
-    BOOST_CHECK_EQUAL(GetArg("-foo", ""), "eleven");
-    BOOST_CHECK_EQUAL(GetArg("-foo", "eleven"), "eleven");
+    ResetArgs("-unit=eleven");
+    BOOST_CHECK_EQUAL(GetArg("-unit", ""), "eleven");
+    BOOST_CHECK_EQUAL(GetArg("-unit", "eleven"), "eleven");
 
 }
 
 BOOST_AUTO_TEST_CASE(intarg)
 {
     ResetArgs("");
-    BOOST_CHECK_EQUAL(GetArg("-foo", 11), 11);
-    BOOST_CHECK_EQUAL(GetArg("-foo", 0), 0);
+    BOOST_CHECK_EQUAL(GetArg("-unit", 11), 11);
+    BOOST_CHECK_EQUAL(GetArg("-unit", 0), 0);
 
-    ResetArgs("-foo -bar");
-    BOOST_CHECK_EQUAL(GetArg("-foo", 11), 0);
+    ResetArgs("-unit -bar");
+    BOOST_CHECK_EQUAL(GetArg("-unit", 11), 0);
     BOOST_CHECK_EQUAL(GetArg("-bar", 11), 0);
 
-    ResetArgs("-foo=11 -bar=12");
-    BOOST_CHECK_EQUAL(GetArg("-foo", 0), 11);
+    ResetArgs("-unit=11 -bar=12");
+    BOOST_CHECK_EQUAL(GetArg("-unit", 0), 11);
     BOOST_CHECK_EQUAL(GetArg("-bar", 11), 12);
 
-    ResetArgs("-foo=NaN -bar=NotANumber");
-    BOOST_CHECK_EQUAL(GetArg("-foo", 1), 0);
+    ResetArgs("-unit=NaN -bar=NotANumber");
+    BOOST_CHECK_EQUAL(GetArg("-unit", 1), 0);
     BOOST_CHECK_EQUAL(GetArg("-bar", 11), 0);
 }
 
 BOOST_AUTO_TEST_CASE(doubledash)
 {
-    ResetArgs("--foo");
-    BOOST_CHECK_EQUAL(GetBoolArg("-foo"), true);
+    ResetArgs("--unit");
+    BOOST_CHECK_EQUAL(GetBoolArg("-unit"), true);
 
-    ResetArgs("--foo=verbose --bar=1");
-    BOOST_CHECK_EQUAL(GetArg("-foo", ""), "verbose");
+    ResetArgs("--unit=verbose --bar=1");
+    BOOST_CHECK_EQUAL(GetArg("-unit", ""), "verbose");
     BOOST_CHECK_EQUAL(GetArg("-bar", 0), 1);
 }
 
 BOOST_AUTO_TEST_CASE(boolargno)
 {
-    ResetArgs("-nofoo");
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
+    ResetArgs("-nounit");
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
 
-    ResetArgs("-nofoo=1");
-    BOOST_CHECK(!GetBoolArg("-foo"));
-    BOOST_CHECK(!GetBoolArg("-foo", true));
-    BOOST_CHECK(!GetBoolArg("-foo", false));
+    ResetArgs("-nounit=1");
+    BOOST_CHECK(!GetBoolArg("-unit"));
+    BOOST_CHECK(!GetBoolArg("-unit", true));
+    BOOST_CHECK(!GetBoolArg("-unit", false));
 
-    ResetArgs("-nofoo=0");
-    BOOST_CHECK(GetBoolArg("-foo"));
-    BOOST_CHECK(GetBoolArg("-foo", true));
-    BOOST_CHECK(GetBoolArg("-foo", false));
+    ResetArgs("-nounit=0");
+    BOOST_CHECK(GetBoolArg("-unit"));
+    BOOST_CHECK(GetBoolArg("-unit", true));
+    BOOST_CHECK(GetBoolArg("-unit", false));
 
-    ResetArgs("-foo --nofoo");
-    BOOST_CHECK(GetBoolArg("-foo"));
+    ResetArgs("-unit --nounit");
+    BOOST_CHECK(GetBoolArg("-unit"));
 
-    ResetArgs("-nofoo -foo"); // foo always wins:
-    BOOST_CHECK(GetBoolArg("-foo"));
+    ResetArgs("-nounit -unit"); // unit always wins:
+    BOOST_CHECK(GetBoolArg("-unit"));
 }
 
 BOOST_AUTO_TEST_SUITE_END()
