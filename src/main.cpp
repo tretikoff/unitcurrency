@@ -2013,11 +2013,15 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1426464000; //epochtime
+        block.nTime    = 1427217182; //epochtime
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 0;
 
-        if (fTestNet) block.nNonce    = 1280634;
+        if (fTestNet)
+        {
+			block.nNonce    = 1280634;
+			block.nTime    = 1426464000;
+		}
 
         //// debug print
         printf("%s\n", block.GetHash().ToString().c_str());
