@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="UnitCoin"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/konstantin/Documents/UnitCoin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/konstantin/Documents/UnitCoin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/konstantin/Documents/UnitCoin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitCoin">
+				<Option output="/Users/konstantin/Documents/UnitCoin/cmake-build-debug/UnitCoin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/konstantin/Documents/UnitCoin/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/json"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/obj"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/qt"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/qt/test"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 UnitCoin"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitCoin/fast">
+				<Option output="/Users/konstantin/Documents/UnitCoin/cmake-build-debug/UnitCoin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/konstantin/Documents/UnitCoin/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/json"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/obj"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/qt"/>
+					<Add directory="/Users/konstantin/Documents/UnitCoin/src/qt/test"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 UnitCoin/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/konstantin/Documents/UnitCoin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/addrman.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/addrman.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/allocators.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/base58.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/bignum.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/bitcoinrpc.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/bitcoinrpc.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/checkpoints.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/checkpoints.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/compat.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/crypter.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/crypter.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/db.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/db.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/init.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/init.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/irc.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/irc.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_error_position.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_reader.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_reader.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_reader_template.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_stream_reader.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_utils.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_value.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_value.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_writer.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_writer.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/json/json_spirit_writer_template.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/key.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/key.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/keystore.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/keystore.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/main.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/main.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/mruset.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/net.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/net.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/netbase.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/netbase.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/noui.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/obj/build.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/protocol.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/protocol.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/aboutdialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/aboutdialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/addressbookpage.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/addressbookpage.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/addresstablemodel.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/addresstablemodel.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/askpassphrasedialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/askpassphrasedialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoin.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinaddressvalidator.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinaddressvalidator.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinamountfield.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinamountfield.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoingui.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoingui.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinstrings.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinunits.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/bitcoinunits.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/clientmodel.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/clientmodel.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/csvmodelwriter.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/csvmodelwriter.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/editaddressdialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/editaddressdialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/guiconstants.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/guiutil.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/guiutil.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/macdockiconhandler.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/macdockiconhandler.mm">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/miningpage.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/miningpage.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/monitoreddatamapper.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/monitoreddatamapper.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/notificator.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/notificator.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/optionsdialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/optionsdialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/optionsmodel.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/optionsmodel.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/overviewpage.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/overviewpage.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qrcodedialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qrcodedialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qtipcserver.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qtipcserver.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qvalidatedlineedit.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qvalidatedlineedit.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qvaluecombobox.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/qvaluecombobox.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/rpcconsole.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/rpcconsole.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/sendcoinsdialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/sendcoinsdialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/sendcoinsentry.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/sendcoinsentry.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/signverifymessagedialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/signverifymessagedialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/test/test_main.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/test/uritests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/test/uritests.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactiondesc.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactiondesc.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactiondescdialog.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactiondescdialog.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactionfilterproxy.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactionfilterproxy.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactionrecord.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactionrecord.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactiontablemodel.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactiontablemodel.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactionview.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/transactionview.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/walletmodel.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/qt/walletmodel.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/rpcdump.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/rpcnet.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/rpcrawtransaction.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/script.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/script.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/scrypt.c">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/scrypt.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/serialize.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/strlcpy.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/sync.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/sync.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/Checkpoints_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/DoS_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/base32_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/base58_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/base64_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/bignum_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/getarg_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/key_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/miner_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/mruset_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/multisig_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/netbase_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/rpc_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/script_P2SH_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/script_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/sigopcount_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/test_bitcoin.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/transaction_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/uint160_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/uint256_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/util_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/test/wallet_tests.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/ui_interface.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/uint256.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/util.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/util.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/version.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/version.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/wallet.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/wallet.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/walletdb.cpp">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/src/walletdb.h">
+			<Option target="UnitCoin"/>
+		</Unit>
+		<Unit filename="/Users/konstantin/Documents/UnitCoin/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

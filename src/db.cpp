@@ -37,16 +37,16 @@ void CDBEnv::EnvShutdown()
     fDbEnvInit = false;
     try
     {
-        dbenv.close(0);
+        dbenv.close(NULL);
     }
     catch (const DbException& e)
     {
         printf("EnvShutdown exception: %s (%d)\n", e.what(), e.get_errno());
     }
-    DbEnv(0).remove(GetDataDir().string().c_str(), 0);
+    DbEnv((u_int32_t)0).remove(GetDataDir().string().c_str(), 0);
 }
 
-CDBEnv::CDBEnv() : dbenv(0)
+CDBEnv::CDBEnv() : dbenv(NULL)
 {
 }
 

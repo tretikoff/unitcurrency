@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/konstantin/Documents/UnitCoin/src/scrypt.c
+scrypt.h
+/Users/konstantin/Documents/UnitCoin/src/scrypt.h
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+openssl/sha.h
+-
+
+/Users/konstantin/Documents/UnitCoin/src/scrypt.h
+
